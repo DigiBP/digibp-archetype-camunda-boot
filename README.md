@@ -30,6 +30,7 @@ mvn org.apache.maven.plugins:maven-archetype-plugin:2.4:generate -DarchetypeCata
 - Select the `Remote https://digibp...` catalog from the `Catalog` dropdown 
 - Select the latest archetype `digibp-archetype-camunda-boot` from the appearing list
 - Click `Next` and create the project
+> Note: How to build and run a Spring Boot application in Eclipse: (1) In Eclipse Project Explorer, right click the project name > select `Run As` > `Maven Build...` (2) In the goals, enter: `spring-boot:run`
 
 ### Creating a Project in IntelliJ
 > Note: There is an [issue](https://issues.apache.org/jira/browse/ARCHETYPE-519) with the `maven-archetype-plugin` version `3.0.0` which affects the current version of IntelliJ. Please [creating a project in maven](#creating-a-project-in-maven).
