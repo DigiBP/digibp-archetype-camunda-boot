@@ -73,25 +73,32 @@ mvn org.apache.maven.plugins:maven-archetype-plugin:2.4:generate -DarchetypeCata
 
 ## Releases
 
+### 1.0.5
+
+- Updating Camunda Enterprise Edition to 7.6.4
+- Uncommenting Camunda REST API
+- Adding (uncommented) Spring Boot Data
+- Adding (uncommented) Hibernate configuration to application.yaml
+
 ### 1.0.4
 
-Adding Camunda Enterprise Edition
+- Adding Camunda Enterprise Edition
 
 ### 1.0.3
 
-Fixing the Maven issue
+- Fixing the Maven issue
 
 ### 1.0.2
 
-Fixing the Eclipse issue
+- Fixing the Eclipse issue
 
 ### 1.0.1
 
-Fixing the basic package
+- Fixing the basic package
 
 ### 1.0.0
 
-Initial version
+- Initial version
 
 ## Maintainer
 - [Andreas Martin](https://github.com/andreasmartin)
