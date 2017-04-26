@@ -79,6 +79,12 @@ mvn org.apache.maven.plugins:maven-archetype-plugin:2.4:generate -DarchetypeCata
 
 ## Releases
 
+### 1.0.6
+
+- Updating Camunda Spring Boot to 2.1.0
+- Updating Spring Boot to 1.5.3.RELEASE
+- Adding to application.yaml: `camunda:bpm:authorization:enabled:true`
+
 ### 1.0.5
 
 - Updating Camunda Enterprise Edition to 7.6.4
