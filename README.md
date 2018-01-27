@@ -64,37 +64,23 @@ mvn archetype:generate -DarchetypeCatalog=https://digibp.github.io/digibp-archet
  - Click next and create the project
 
 ## Project Profiles
-1. Camunda-Spring-Boot-JAR
-2. Camunda-Spring-Boot-WAR
-3. Camunda-Enterprise-Edition
+1. Spring-Boot-JAR
+2. Spring-Boot-WAR
 
-### Camunda Enterprise Edition
-1. Select the `Camunda-Enterprise-Edition` maven profile.
-2. Create a `maven-user-settings.xml` file containing Camunda Maven repsository's username and password:
-    ```xml
-    <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
-              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-              xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
-                          https://maven.apache.org/xsd/settings-1.0.0.xsd">
-        <servers>
-            <server>
-                <id>camunda-bpm-ee</id>
-                <username></username>
-                <password></password>
-            </server>
-        </servers>
-    </settings>
-    ```
-3. Add the `maven-user-settings.xml` to the IntelliJ or Eclipse project settings.
-4. Create a `camunda-license.txt` file under `src > main > resources` and paste your Camunda BPM license key:
-    ```text
-    --------------- BEGIN CAMUNDA BPM LICENSE KEY ---------------
-    
-    ---------------  END CAMUNDA BPM LICENSE KEY  ---------------
-    ```
-5. Important: Add to `maven-user-settings.xml` and `camunda-license.txt` to `.gitignore`
+## Procedure for creating an updated archetype
+1. Clone the master branch and make your changes.
+2. Make sure that you increase the version in the Maven `pom.xml`.
+3. Generate the archetype from the project `clean archetype:create-from-project -Darchetype.properties=archetype.properties`.
+4. Clone the gh-pages branch and copy your generated archetype files to the gh-pages branch.
+5. Optional: `clean install archetype:update-local-catalog` and copy the entries to the `archetype-catalog.xml`.
+6. Deploy the artifacts to the main folder of the gh-pages branch using `deploy -DaltDeploymentRepository=internal.repo::default::file://${basedir}`
+7. Commit and push the gh-pages branch.
 
 ## Releases
+
+### 2.0.0
+- Updating Camunda Spring Boot to 2.3.0
+- Updating Spring Boot to 1.5.8.RELEASE
 
 ### 1.0.6
 
