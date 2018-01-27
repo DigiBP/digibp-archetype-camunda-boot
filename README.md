@@ -10,10 +10,6 @@ Create a new project using the archetype published here: https://digibp.github.i
 ```text
 mvn archetype:generate -DarchetypeCatalog=https://digibp.github.io/digibp-archetype-camunda-boot/archetype-catalog.xml
 ```
-> Note: There is an [issue](https://issues.apache.org/jira/browse/ARCHETYPE-519) with the `maven-archetype-plugin` version `3.0.0` which affects the current version of IntelliJ as well. To avoid this issue the following command can be used: 
-```text
-mvn org.apache.maven.plugins:maven-archetype-plugin:2.4:generate -DarchetypeCatalog=https://digibp.github.io/digibp-archetype-camunda-boot/archetype-catalog.xml
-```
 
 ### Creating a Project in Eclipse
 
@@ -33,7 +29,6 @@ mvn org.apache.maven.plugins:maven-archetype-plugin:2.4:generate -DarchetypeCata
 > Note: How to build and run a Spring Boot application in Eclipse: (1) In Eclipse Project Explorer, right click the project name > select `Run As` > `Maven Build...` (2) In the goals, enter: `spring-boot:run`
 
 ### Creating a Project in IntelliJ
-> Note: There is an [issue](https://issues.apache.org/jira/browse/ARCHETYPE-519) with the `maven-archetype-plugin` version `3.0.0` which affects the current version of IntelliJ. Please [creating a project in maven](#creating-a-project-in-maven).
 - Create new project `File > New > Project`
 - Click Maven on the left hand side of the new project dialog
 - Check `Create from archetype`
@@ -44,7 +39,29 @@ mvn org.apache.maven.plugins:maven-archetype-plugin:2.4:generate -DarchetypeCata
         - Set `Version` to `<the latest release version>`
         - Set `Repository` to `https://digibp.github.io/digibp-archetype-camunda-boot`
 - Select the latest archetype `digibp-archetype-camunda-boot` from the appearing list
-- Click next and create the project
+- Click next, and specify GroupId, ArtefactId and Version
+- Click next and select a user settings file with the following content:
+    ```xml
+    <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                            https://maven.apache.org/xsd/settings-1.0.0.xsd">
+        <profiles>
+            <profile>
+                <activation>
+                    <activeByDefault>true</activeByDefault>
+                </activation>
+                <repositories>
+                    <repository>
+                        <id>archetype</id>
+                        <url>https://digibp.github.io/digibp-archetype-camunda-boot</url>
+                    </repository>
+                </repositories>
+            </profile>
+        </profiles>
+    </settings>
+    ```
+ - Click next and create the project
 
 ## Project Profiles
 1. Camunda-Spring-Boot-JAR
