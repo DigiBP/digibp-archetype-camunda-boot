@@ -26,7 +26,6 @@ mvn archetype:generate -DarchetypeCatalog=https://digibp.github.io/digibp-archet
 - Select the `Remote https://digibp...` catalog from the `Catalog` dropdown 
 - Select the latest archetype `digibp-archetype-camunda-boot` from the appearing list
 - Click `Next` and create the project
-> Note: How to build and run a Spring Boot application in Eclipse: (1) In Eclipse Project Explorer, right click the project name > select `Run As` > `Maven Build...` (2) In the goals, enter: `spring-boot:run`
 
 ### Creating a Project in IntelliJ
 - Create new project `File > New > Project`
@@ -68,15 +67,20 @@ mvn archetype:generate -DarchetypeCatalog=https://digibp.github.io/digibp-archet
 2. Spring-Boot-WAR
 
 ## Procedure for creating an updated archetype
-1. Clone the master branch and make your changes.
+1. Clone the master branch of [digibp-camunda-template](https://github.com/DigiBP/digibp-camunda-template) and make your changes.
 2. Make sure that you increase the version in the Maven `pom.xml`.
 3. Generate the archetype from the project `clean archetype:create-from-project -Darchetype.properties=archetype.properties`.
-4. Clone the gh-pages branch and copy your generated archetype files to the gh-pages branch.
-5. `clean install archetype:update-local-catalog` and copy the entries to the `archetype-catalog.xml`.
-6. Deploy the artifacts to the main folder of the gh-pages branch using `deploy -DaltDeploymentRepository=internal.repo::default::file://${basedir}`
-7. Commit and push the gh-pages branch.
+4. Clone the gh-pages branch and copy your generated archetype files `target\generated-sources\archetype\src\main\resources` to the gh-pages branch under `src\main\resources`. 
+5. Copy a `.gitignore` file to `src\main\resources\archetype-resources`.
+6. Make sure that you increase the version in the Maven `pom.xml`.
+7. Update the entries in `archetype-catalog.xml` (optional: `clean install archetype:update-local-catalog` and copy the entries).
+8. Deploy the artifacts to the main folder of the gh-pages branch using `deploy -DaltDeploymentRepository=internal.repo::default::file://${basedir}`
+9. Commit and push the gh-pages branch.
 
 ## Releases
+
+### 2.0.2
+- Adding a .gitignore file
 
 ### 2.0.1
 - Adding a .gitignore template file
