@@ -4,7 +4,7 @@
 These archetypes can be used to create a fresh Camunda Spring Boot project.
 
 ## New Project Creation
-Create a new project using the archetype published here: https://digibp.github.io/digibp-archetype-camunda-boot
+Create a new project using the archetype published here: [https://digibp.github.io/digibp-archetype-camunda-boot](https://digibp.github.io/digibp-archetype-camunda-boot)
 
 ### Creating a Project in Maven
 ```text
@@ -70,7 +70,7 @@ mvn archetype:generate -DarchetypeCatalog=https://digibp.github.io/digibp-archet
 1. Clone the master branch of [digibp-camunda-template](https://github.com/DigiBP/digibp-camunda-template) and make your changes.
 2. Make sure that you increase the version in the Maven `pom.xml`.
 3. Generate the archetype from the project `clean archetype:create-from-project -Darchetype.properties=archetype.properties`.
-4. Clone the gh-pages branch and copy your generated archetype files `target\generated-sources\archetype\src\main\resources` to the gh-pages branch under `src\main\resources`. 
+4. Clone the master branch of [digibp-archetype-camunda-boot](https://github.com/DigiBP/digibp-archetype-camunda-boot) and copy your generated archetype files to `target\generated-sources\archetype\src\main\resources` to the gh-pages branch under `src\main\resources`. 
 5. Copy a `.gitignore` file to `src\main\resources\archetype-resources`.
 6. Make sure that you increase the version in the Maven `pom.xml`.
 7. Update the entries in `archetype-catalog.xml` (optional: `clean install archetype:update-local-catalog` and copy the entries).
