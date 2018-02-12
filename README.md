@@ -79,6 +79,9 @@ mvn archetype:generate -DarchetypeCatalog=https://digibp.github.io/digibp-archet
 
 ## Releases
 
+### 2.0.3
+- Adding a README.md file
+
 ### 2.0.2
 - Adding a .gitignore file
 

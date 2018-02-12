@@ -52,6 +52,7 @@
         <include>mvnw</include>
         <include>mvnw.cmd</include>
         <include>Procfile</include>
+        <include>README.md</include>
       </includes>
     </fileSet>
   </fileSets>
