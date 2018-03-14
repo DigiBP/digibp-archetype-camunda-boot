@@ -79,6 +79,9 @@ mvn archetype:generate -DarchetypeCatalog=https://digibp.github.io/digibp-archet
 
 ## Releases
 
+### 2.0.6
+- A much nicer `deploy to Heroku` shield.
+
 ### 2.0.5
 - Adding 'authorization: enabled: false' to application.yaml
 
