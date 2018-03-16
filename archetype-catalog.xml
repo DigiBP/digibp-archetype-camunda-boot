@@ -6,6 +6,12 @@
     <archetype>
       <groupId>ch.fhnw.digibp.archetype</groupId>
       <artifactId>digibp-archetype-camunda-boot</artifactId>
+      <version>2.0.7</version>
+      <description>digibp-archetype-camunda-boot</description>
+    </archetype>
+    <archetype>
+      <groupId>ch.fhnw.digibp.archetype</groupId>
+      <artifactId>digibp-archetype-camunda-boot</artifactId>
       <version>2.0.6</version>
       <description>digibp-archetype-camunda-boot</description>
     </archetype>
