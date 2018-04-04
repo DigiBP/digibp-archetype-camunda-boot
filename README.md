@@ -81,6 +81,7 @@ mvn archetype:generate -DarchetypeCatalog=https://digibp.github.io/digibp-archet
 
 ### 2.0.7
 - Default Maven goal `clean spring-boot:run`
+- Camunda Modeler Element Template (not in archetype)
 
 ### 2.0.6
 - A much nicer `deploy to Heroku` shield.
