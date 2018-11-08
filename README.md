@@ -62,10 +62,6 @@ mvn archetype:generate -DarchetypeCatalog=https://digibp.github.io/digibp-archet
     ```
  - Click next and create the project
 
-## Project Profiles
-1. Spring-Boot-JAR
-2. Spring-Boot-WAR
-
 ## Procedure for creating an updated archetype
 1. Clone the master branch of [digibp-camunda-template](https://github.com/DigiBP/digibp-camunda-template) and make your changes.
 2. Make sure that you increase the version in the Maven `pom.xml`.
@@ -74,10 +70,15 @@ mvn archetype:generate -DarchetypeCatalog=https://digibp.github.io/digibp-archet
 5. Copy a `.gitignore` file to `src\main\resources\archetype-resources`.
 6. Make sure that you increase the version in the Maven `pom.xml`.
 7. Update the entries in `archetype-catalog.xml` (optional: `clean install archetype:update-local-catalog` and copy the entries).
-8. Deploy the artifacts to the main folder of the gh-pages branch using `deploy -DaltDeploymentRepository=internal.repo::default::file://${basedir}`
+8. Deploy the artifacts to the main folder of the gh-pages branch using `deploy -DaltDeploymentRepository=internal.repo::file://${basedir}`
 9. Commit and push the gh-pages branch.
 
 ## Releases
+
+### 3.0.0
+- Updating Camunda to 7.9.0
+- Updating Camunda Spring Boot to 3.0.0
+- Updating Spring Boot to 2.0.2.RELEASE
 
 ### 2.0.7
 - Default Maven goal `clean spring-boot:run`
