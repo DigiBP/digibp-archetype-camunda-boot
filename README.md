@@ -75,6 +75,10 @@ mvn archetype:generate -DarchetypeCatalog=https://digibp.github.io/digibp-archet
 
 ## Releases
 
+### 3.2.0
+- Updating Camunda Spring Boot to 3.2.0
+- Updating Spring Boot to 2.1.1.RELEASE
+
 ### 3.1.0
 - Updating Camunda to 7.10.0
 - Updating Camunda Spring Boot to 3.1.0
