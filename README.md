@@ -75,6 +75,9 @@ mvn archetype:generate -DarchetypeCatalog=https://digibp.github.io/digibp-archet
 
 ## Releases
 
+### 3.2.1
+- Rearrange the order of the REST and Web Apps dependencies
+
 ### 3.2.0
 - Updating Camunda Spring Boot to 3.2.0
 - Updating Spring Boot to 2.1.1.RELEASE
