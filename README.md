@@ -75,6 +75,10 @@ mvn archetype:generate -DarchetypeCatalog=https://digibp.github.io/digibp-archet
 
 ## Releases
 
+### 3.2.2
+- Use of Camunda deployment procedure (embedded:deployment) instead of Spring Boot (embedded:app)
+- Change of resource folder structure due to the use deployment procedure  
+
 ### 3.2.1
 - Rearrange the order of the REST and Web Apps dependencies
 
