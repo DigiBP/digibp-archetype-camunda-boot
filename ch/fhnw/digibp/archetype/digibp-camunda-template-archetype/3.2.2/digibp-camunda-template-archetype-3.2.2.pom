@@ -4,7 +4,7 @@
 
   <groupId>ch.fhnw.digibp.archetype</groupId>
   <artifactId>digibp-camunda-template-archetype</artifactId>
-  <version>3.2.3</version>
+  <version>3.2.2</version>
   <packaging>maven-archetype</packaging>
 
   <name>digibp-camunda-template-archetype</name>

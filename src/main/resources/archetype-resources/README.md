@@ -8,4 +8,4 @@
 
 ## License
 
-- [Apache License, Version 2.0](https://github.com/DigiBP/digibp-archetype-camunda-boot/blob/master/LICENSE)
+- [Apache License, Version 2.0](https://github.com/DigiBP/digibp-camunda-template-archetype/blob/master/LICENSE)

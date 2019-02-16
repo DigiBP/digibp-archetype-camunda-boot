@@ -1,14 +1,14 @@
-# DigiBP Camunda Boot Archetype
+# DigiBP Camunda Template Archetype
 
 ## Summary
 These archetypes can be used to create a fresh Camunda Spring Boot project.
 
 ## New Project Creation
-Create a new project using the archetype published here: [https://digibp.github.io/digibp-archetype-camunda-boot](https://digibp.github.io/digibp-archetype-camunda-boot)
+Create a new project using the archetype published here: [https://digibp.github.io/digibp-camunda-template-archetype](https://digibp.github.io/digibp-camunda-template-archetype)
 
 ### Creating a Project in Maven
 ```text
-mvn archetype:generate -DarchetypeCatalog=https://digibp.github.io/digibp-archetype-camunda-boot/archetype-catalog.xml
+mvn archetype:generate -DarchetypeCatalog=https://digibp.github.io/digibp-camunda-template-archetype/archetype-catalog.xml
 ```
 
 ### Creating a Project in Eclipse
@@ -16,7 +16,7 @@ mvn archetype:generate -DarchetypeCatalog=https://digibp.github.io/digibp-archet
 #### Add a Remote Archetype Catalog 
 - Open `Window > Preferences`
 - Go to `Maven > Archetypes` and select `Add Remote Catalog...`
-- Set `Catalog File` to `https://digibp.github.io/digibp-archetype-camunda-boot/archetype-catalog.xml`
+- Set `Catalog File` to `https://digibp.github.io/digibp-camunda-template-archetype/archetype-catalog.xml`
 - Click `OK` so the Archetype catalog is added to the list
 
 #### Creating a Project in Eclipse using the Catalog
@@ -24,20 +24,20 @@ mvn archetype:generate -DarchetypeCatalog=https://digibp.github.io/digibp-archet
 - Make sure `Create a simple project` option is not selected
 - Click `Next` to navigate to `Select an Archetype` screen
 - Select the `Remote https://digibp...` catalog from the `Catalog` dropdown 
-- Select the latest archetype `digibp-archetype-camunda-boot` from the appearing list
+- Select the latest archetype `digibp-camunda-template-archetype` from the appearing list
 - Click `Next` and create the project
 
 ### Creating a Project in IntelliJ
 - Create new project `File > New > Project`
 - Click Maven on the left hand side of the new project dialog
 - Check `Create from archetype`
-- Note: If you are using the IntelliJ [Maven Archetype Catalogs](https://plugins.jetbrains.com/plugin/7965-maven-archetype-catalogs) plugin and adding the `Catalog File` `https://digibp.github.io/digibp-archetype-camunda-boot/archetype-catalog.xml`, the following steps can be avoided: 
+- Note: If you are using the IntelliJ [Maven Archetype Catalogs](https://plugins.jetbrains.com/plugin/7965-maven-archetype-catalogs) plugin and adding the `Catalog File` `https://digibp.github.io/digibp-camunda-template-archetype/archetype-catalog.xml`, the following steps can be avoided: 
     - Click the `Add Archetype` button
         - Set `Group Id` to `ch.fhnw.digibp.archetype`
-        - Set `Artifact Id` to `digibp-archetype-camunda-boot`
+        - Set `Artifact Id` to `digibp-camunda-template-archetype`
         - Set `Version` to `<the latest release version>`
-        - Set `Repository` to `https://digibp.github.io/digibp-archetype-camunda-boot`
-- Select the latest archetype `digibp-archetype-camunda-boot` from the appearing list
+        - Set `Repository` to `https://digibp.github.io/digibp-camunda-template-archetype`
+- Select the latest archetype `digibp-camunda-template-archetype` from the appearing list
 - Click next, and specify GroupId, ArtefactId and Version
 - Click next and select a user settings file with the following content:
     ```xml
@@ -53,7 +53,7 @@ mvn archetype:generate -DarchetypeCatalog=https://digibp.github.io/digibp-archet
                 <repositories>
                     <repository>
                         <id>archetype</id>
-                        <url>https://digibp.github.io/digibp-archetype-camunda-boot</url>
+                        <url>https://digibp.github.io/digibp-camunda-template-archetype</url>
                     </repository>
                 </repositories>
             </profile>
@@ -66,7 +66,7 @@ mvn archetype:generate -DarchetypeCatalog=https://digibp.github.io/digibp-archet
 1. Clone the master branch of [digibp-camunda-template](https://github.com/DigiBP/digibp-camunda-template) and make your changes.
 2. Make sure that you increase the version in the Maven `pom.xml`.
 3. Generate the archetype from the project `clean archetype:create-from-project -Darchetype.properties=archetype.properties`.
-4. Clone the master branch of [digibp-archetype-camunda-boot](https://github.com/DigiBP/digibp-archetype-camunda-boot) and copy your generated archetype files `target\generated-sources\archetype\src\main\resources` to the gh-pages branch under `src\main\resources`. 
+4. Clone the master branch of [digibp-camunda-template-archetype](https://github.com/DigiBP/digibp-camunda-template-archetype) and copy your generated archetype files `target\generated-sources\archetype\src\main\resources` to the gh-pages branch under `src\main\resources`. 
 5. Copy a `.gitignore` file to `src\main\resources\archetype-resources`.
 6. Make sure that you increase the version in the Maven `pom.xml`.
 7. Update the entries in `archetype-catalog.xml` (optional: `clean install archetype:update-local-catalog` and copy the entries).
@@ -163,4 +163,4 @@ mvn archetype:generate -DarchetypeCatalog=https://digibp.github.io/digibp-archet
 
 ## License
 
-- [Apache License, Version 2.0](https://github.com/DigiBP/digibp-archetype-camunda-boot/blob/master/LICENSE)
+- [Apache License, Version 2.0](https://github.com/DigiBP/digibp-camunda-template-archetype/blob/master/LICENSE)
