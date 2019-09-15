@@ -77,7 +77,7 @@ mvn archetype:generate -DarchetypeCatalog=https://digibp.github.io/digibp-camund
 
 ### 3.3.0
 - Updating Camunda to 7.11.0
-- Updating Camunda Spring Boot to 3.3.3
+- Updating Camunda Spring Boot to 3.3.4
 - Updating Spring Boot to 2.1.6.RELEASE
 - Removing Maven Wrapper
 - Removing Camunda Modeler Templates
