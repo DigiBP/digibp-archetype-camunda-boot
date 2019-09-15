@@ -75,6 +75,13 @@ mvn archetype:generate -DarchetypeCatalog=https://digibp.github.io/digibp-camund
 
 ## Releases
 
+### 3.3.0
+- Updating Camunda to 7.11.0
+- Updating Camunda Spring Boot to 3.3.3
+- Updating Spring Boot to 2.1.6.RELEASE
+- Removing Maven Wrapper
+- Removing Camunda Modeler Templates
+
 ### 3.2.3
 - Adding `spring-boot-starter-jdbc` dependency, otherwise `spring:datasource` is ignored.
 
